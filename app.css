@@ -1,0 +1,13 @@
+div {
+    background-color: blue;
+    border: solid 2px black;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+h1 {
+    color: red;
+}
