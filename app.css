@@ -1,13 +1,121 @@
-div {
-    background-color: blue;
-    border: solid 2px black;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    margin-top: auto;
-    margin-left: auto;
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+body{
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.eingabeform{
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-h1 {
-    color: red;
+label.lb1, label.lb2{
+    margin: 0.2em;
+    text-align: left;
+    width: 10em;
+    display: inline-block;
 }
+input.lb1, input.lb2{
+    width: 3em;
+    margin-right: 2em;
+    margin: 0.2em;
+}
+
+#btnBerechnen{
+    width: 10em;
+    margin: 0.2em;
+}
+
+.panel{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #888;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    min-height: 40em;
+    display: flex;
+    flex-direction: column;
+    text-align:right;
+}
+
+header{
+    border-bottom: 1px solid grey;
+    font-weight: 600;
+    letter-spacing: 1px;
+    height: 2.2em;
+    text-align: center;
+}
+
+footer{
+    border-top: 1px solid grey;
+    font-weight: 400;
+    font-size: 0.7em;
+    font-style: italic;
+    height: 2.2em;
+    padding-top: 10px;
+}
+
+main{
+    height:100%;
+    min-height: 50em;
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+.matrix table{
+    table-layout: fixed;
+    width: 200px;
+    font-size: auto;
+    margin-right: auto; 
+    margin-left: auto;
+    margin-top: 25px;
+    border-collapse: separate;
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+}
+
+.varteil{
+    border: 1px solid grey;
+}
+
+.matrix table td{
+    white-space: nowrap;
+    text-align: rigth;
+}
+
+.matrix table td:nth-of-type(4){
+    /* padding-right: 10px; */
+}
+.matrix table td:nth-of-type(5){
+    border-left:  1px solid grey;
+    padding-left: 10px;
+}
+
+.matrix table td:nth-of-type(6){
+    padding-left: 25px;
+}
+
+.Loesung{
+    margin-top: 1.5em;
+    border: 1px solid black;
+    background-color:darksalmon;
+    padding: 0.2em;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 800;
+    font-style:italic;
+    border-radius: 2px;
+}
+
+

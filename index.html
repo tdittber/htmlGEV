@@ -5,19 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gauß'sches Eliminationsverfahren</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
     <link rel="stylesheet" href="css_reset.css">
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div class="main">
+    <div class="panel">
         <header class="header">
-
+            <h1>Gauß'sches Elimnationsverfahren</h1>
         </header>
-        <main >
-            <h1>Test</h1>
+        <main>
+            <form class="eingabeform">
+                <div class="lb1">
+                    <label class="lb1" for="anzUnbekannte">Anzahl Unbekannte:</label>
+                    <input class="lb1" type="number" id="anzUnbekannte">
+                </div>
+                <div>
+                    <label class="lb2" for="anzBedingungen">Anzahl Bedingungen:</label>
+                    <input class="lb2" type="number" id="anzBedingungen">
+                </div>
+                <button id="btnBerechnen">Berechnen</button>
+            </form>
+            <div class="matrix">
+            <table >
+                <colgroup class="varteil">
+                    <col span="4">
+                </colgroup>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>* &#8545;-3&#183;&#8544;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>* &#8546;-4&#183;&#8544;</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>* &#8547;-5&#183;&#8544;</td>
+                </tr>
+            </table>
+            <table >
+                <colgroup class="varteil">
+                    <col span="4">
+                </colgroup>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>-2</td>
+                    <td>-7</td>
+                    <td>-11</td>
+                    <td>-8</td>
+                    <td>* &#8545;-3&#183;&#8544;</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>-1</td>
+                    <td>-9</td>
+                    <td>-15</td>
+                    <td>-10</td>
+                    <td>* &#8546;-4&#183;&#8544;</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>-4</td>
+                    <td>-14</td>
+                    <td>-18</td>
+                    <td>-11</td>
+                    <td>* &#8547;-5&#183;&#8544;</td>
+                </tr>
+            </table>
+            <table >
+                <colgroup class="varteil">
+                    <col span="4">
+                </colgroup>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>-2</td>
+                    <td>-7</td>
+                    <td>-11</td>
+                    <td>-8</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>-11</td>
+                    <td>-19</td>
+                    <td>-12</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <p class="Loesung"><span>L</span>={(0,34|0,87|-1,07|1,25)}</p>
+        </div>
+
         </main>
         <footer >
-
+            <p>Erstellt am 24.12.2021 von Thomas Dittberner</p>
         </footer>
     </div>
 </body>
